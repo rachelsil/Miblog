@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C85</title>
+<link rel="stylesheet" href="style.css">
+
+<!--LLamamos a la biblioteca de fabric.js-->
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<!-- Añadimos la clase  la cual añade un fondo a la página HTML.-->
+<body class="body_background">
+	<center>
+		
+    <!--añadimos la clase bootstrap  btn-primary añadirá un color azul para el fondo y un color de letra blanco-->
+		<h2 class="btn-primary">MINECRAFT</h2>
+
+<!--añadimos la clase bootstrap btn-danger añadirá un color rojo para el fondo y un color de letra blanco-->
+		<div id="head_info" class="btn-danger">
+			
+<!--Estas etiquetas span se utilizan para mostrar el ancho y alto de los bloques (como la pared, el tronco y otros)
+	 en la pantalla conforme incrementa o disminuye el tamaño-->		
+			<h3>Ancho actual  = <span id="current_width">30</span></h3>
+			<h3>Altura actual  = <span id="current_height">30</span></h3>
+		</div>
+
+		<canvas width="1000" height="600" id="myCanvas"></canvas>
+
+	</center>
+	<script src="main.js"></script>
+</body>
+</html>
